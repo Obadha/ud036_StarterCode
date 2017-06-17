@@ -10,5 +10,7 @@ To run the code, clone or download the repository to your local machine. From th
 
 # File Structure
 fresh_tomatoes.py - renders the html page.
-media.py - declares the instant variables.
-movie_page.py - passes the values into the instance variables.
+
+media.py - initialises the instant variables.
+
+movie_page.py - passes the values(movie information i.e poster, title and video trailer url) into the instance variables.
