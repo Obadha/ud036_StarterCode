@@ -1,6 +1,11 @@
 import fresh_tomatoes
 import media
 
+
+"""
+Create instances of the class MovieTrailers for each movie and passes
+in the values for each for each variables
+"""
 star_wars = media.MovieTrailers("Star Wars", "https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",  # NOQA
 	"https://www.youtube.com/watch?v=sGbxmsDFVnE")
 
@@ -19,7 +24,12 @@ xmen = media.MovieTrailers("X Men", "https://upload.wikimedia.org/wikipedia/en/0
 justiceLeague = media.MovieTrailers("Justice League", "https://upload.wikimedia.org/wikipedia/en/3/31/Justice_League_film_poster.jpg",  # NOQA
 	"https://www.youtube.com/watch?v=OiAmnKUaNmc")
 
-
+"""
+Create a list from the movie instances create above. This list will be passed 
+as a paremeter to the method open_movies_page that then takes the items
+and displays each one
+"""
 movies = [star_wars, lordoftherings, transformers, avengers, xmen,
 justiceLeague ]
+
 fresh_tomatoes.open_movies_page (movies)
